@@ -1,0 +1,659 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+  	      <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/jssor.slider-26.2.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 0,
+              $SlideDuration: 5000,
+              $SlideEasing: $Jease$.$Linear,
+              $PauseOnHover: 4,
+              $SlideWidth: 140,
+              $Cols: 7
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+  
+    </head>
+
+    <body>
+
+	<!-- navbar -->
+		<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/logo.jpg"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span \><i class="fa fa-search"></i></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><input type="text" name=""></a></li>
+             
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+	<!-- navbar-end -->
+
+
+	<div class="slider">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/slider1.jpg" alt="Chania" class="img-responsive w100" style="height:600px">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/c-slide-1.jpg" alt="Chicago" class="img-responsive w100" style="height:600px">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/blue.jpg" alt="New York" class="img-responsive w100" style="height:600px">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	</div>
+	<!-- slider-End -->
+
+    <div class="container">
+    	<div class="row">
+	   		<div class="col-lg-3">
+				<div class="one-forth">
+	    			<div class="block">	
+	    				<img src="img/1.jpg" alt="">
+	    				<h1>Ultimate Multi-purpose</h1>
+	    				<p>Nemo enium ipsam voluptatem quia voluptas
+	    				 sit aspernatur aut odit aut fugit,sed quia
+	    			  	dolores.</p>
+	    			 </div><!-- block --> 		
+        	    </div><!-- one-fouth  -->
+            </div><!-- col-lg-3  -->    
+	    	<div class="col-lg-3">
+            	 <div class="one-forth">   
+	    			<div class="block">	
+	    				<img src="img/2.jpg" alt="">
+	    				<h1>50+Pages and Short-codes</h1>
+	    				<p>Nemo enium ipsam voluptatem quia voluptas
+	    				 sit aspernatur aut odit aut fugit,sed quia
+	    			  	dolores.</p>
+	    			 </div><!-- block -->		
+         	   </div><!-- one-fouth  -->
+            </div><!-- col-lg-3  -->    
+	    	<div class="col-lg-3">
+                <div class="one-forth">
+	    			<div class="block">	
+	    				<img src="img/3.jpg" alt="">
+	    				<h1>Rich Theme-options</h1>
+	    				<p>Nemo enium ipsam voluptatem quia voluptas
+	    				 sit aspernatur aut odit aut fugit,sed quia
+	    			  	dolores.</p>
+	    			 </div><!-- block -->
+                </div><!-- one-fouth  -->
+	    	</div><!-- col-lg-3  -->
+	    	<div class="col-lg-3">
+                <div class="one-forth">
+	    			<div class="block">	
+	    				<img src="img/4.jpg" alt="">
+	    				<h1>Clean and Professional Deisgn</h1>
+	    				<p>Nemo enium ipsam voluptatem quia voluptas
+	    				 sit aspernatur aut odit aut fugit,sed quia
+	    			  	dolores.</p>
+	    			 </div><!-- block -->
+				</div><!-- one-fouth  -->
+            </div><!-- col-lg-3  -->    	
+    	</div><!-- row -->
+    </div><!-- container-->
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 no-padding">
+		    	<div class="purpose">
+		    		<h2>A MULTI-PURPOSE WORDPRESS THEME</h2>
+		    		<h3>WITH LIMITLESS POSSIBILITIES</h3>
+		    		<ul>
+		    			<li class="active"><a href="#"><i class="fa fa-bars"></i>CHECK OUT FEATURES</a></li>
+		    			<li><a href="#"><i class="fa fa-download"></i>PURCHASE THIS NOW</a></li>
+		    		</ul> 
+		    	</div>
+		    </div><!-- col-lg-12 -->	
+		</div><!-- row -->
+    </div><!-- container-fluid  -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="repeat-head">
+					<h1>WHATE WE DO</h1>
+					<p>Dsicover something more every day</p>
+					<div class="bdr"></div>
+				</div><!-- repeat-head  -->
+			
+			<div class="social">
+				<ul>
+					<li class="this"><a href="#">ALL</a></li>
+					<li><a href="#">BRANDING</a></li>
+					<li><a href="#">MARKETING</a></li>
+					<li><a href="#">PLANNING</a></li>
+					<li><a href="#">RESEARCH</a></li>
+				</ul>
+			</div><!--  sicial -->
+		</div><!--  col-lg-12 -->
+		</div><!-- row -->
+	</div><!-- container  -->
+	<div class="container-fluid">
+		<div class="row image-grid">
+				<div class="col-lg-3 no-padding">
+			<div class="images">
+					<h1>Hall Way</h1>
+					<img src="img/pic-1.jpg" alt="" class="img-responsi">	
+			</div><!--  images -->
+				</div><!-- col-lg-3 -->
+				<div class="col-lg-3 no-padding">
+			<div class="images">
+					<h1>Hall Way</h1>			
+					<img src="img/pic-2.jpg" alt="" class="img-responsi">
+			</div><!--  images -->
+				</div><!-- col-lg-3 -->
+				<div class="col-lg-3 no-padding">
+			<div class="images">	
+					<h1>Hall Way</h1>
+					<img src="img/pic-3.jpg" alt="" class="img-responsi">
+			</div><!--  images -->
+				</div><!-- col-lg-3 -->
+				<div class="col-lg-3 no-padding">
+			<div class="images">
+					<h1>Hall Way</h1>
+					<img src="img/pic-4.jpg" alt="" class="img-responsi">
+			</div><!--  images -->
+				</div><!-- col-lg-3 -->
+				<div class="col-lg-3 no-padding">
+			<div class="images">
+					<h1>Hall Way</h1>
+					<img src="img/pic-5.jpg" alt="" class="img-responsi">
+			</div><!--  images -->
+				</div><!-- col-lg-3 -->
+				<div class="col-lg-3 no-padding">
+			<div class="images">
+					<h1>Hall Way</h1>
+					<img src="img/pic-6.jpg" alt="" class="img-responsi">
+			</div><!--  images -->
+				</div><!-- col-lg-3 -->
+				<div class="col-lg-3 no-padding">
+			<div class="images">
+					<h1>Hall Way</h1>
+					<img src="img/pic-7.jpg" alt="" class="img-responsi">
+			</div><!--  images -->
+				</div><!-- col-lg-3 -->
+				<div class="col-lg-3 no-padding">
+			<div class="images">
+					<h1>Hall Way</h1>
+					<img src="img/pic-8.jpg" alt="" class="img-responsi">
+			</div><!--  images -->
+				</div><!-- col-lg-3 -->
+			
+		</div><!-- row -->
+	</div><!-- container-fluid -->
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="block-end">	
+					<h3>FROM THE BLOG</h3>
+					<ul>
+						<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+					</ul><br>
+					<hr class="bdr-3">
+				</div><!-- block-end -->
+				<div class="col-md-6">
+					<div class="start">
+					<div class="calender pull-left">
+							<div class="date">
+								5 <br> APR
+							</div>
+							<div class="file">
+								<i class="fa fa-file-o"></i>
+							</div>
+						</div>
+						<h4>Starting a Buisness Guide</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat maxime, alias voluptatibus. Architecto, dolorum delectus quam perferendis? Eligendi, quidem nostrum recusandae earum voluptate nam maiores qui. Eligendi exercitationem, omnis dolore.</p>	
+					</div><!-- Start -->				
+				</div>
+				<div class="col-md-6">
+					<div class="start">
+						<div class="calender pull-left">
+							<div class="date">
+								5 <br> APR
+							</div>
+							<div class="file">
+								<i class="fa fa-file-o"></i>
+							</div>
+						</div>
+						<h4>Plan for what is difficult</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat maxime, alias voluptatibus. Architecto, dolorum delectus quam perferendis? Eligendi, quidem nostrum recusandae earum voluptate nam maiores qui. Eligendi exercitationem, omnis dolore.</p>	
+					</div>
+				</div><!-- Start -->
+
+			</div>
+			<!-- col-lg-8-End -->
+			<div class="col-lg-4">
+				<div class="block-end">	
+					<h3>WHAT PROPLE SAYS</h3>
+					<ul>
+						<li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+					</ul><br>
+					<hr class="bdr-3">
+					<div class="bor-area">
+						<p>"Excepteur sint occaecat cupidatat non proident, sunt in
+						 culpa qui officia deserunt mollit anim laborum. Lorem  ipsum
+						  dolor sit amet,consectetur adipisicing elit.</p>
+					</div><!-- bor-area -->
+					<div class="last-p">
+						<p>Edith E.Chamberlain -<span>Wordpress</span> </p>
+					</div>
+				</div><!-- block-end -->
+			</div>	<!-- col-lg-4-end -->
+
+		</div><!-- row-End -->
+	</div>	<!-- container-End -->
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+					<div class="repeat-head">
+						<h1>HERE WE ARE</h1>
+						<p>Passionate about perfection</p>
+						<div class="bdr"></div>
+					</div><!-- repeat-head  -->
+				</div><!-- col-lg-12 -->
+		</div><!-- row -->
+	</div><!-- container-fluid -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="img-block">
+					<img src="img/jhon-1.jpg" alt="">
+					<h3>Duis aute irure dolor in reprehenderit in
+					 voluptate velit esse cillum dolore fugiat.</h3>
+					 <div class="pro-lang">
+					 	<h5>Wordpress</h5>
+					 	<hr class="wordpress">
+					 	<h5>PHP</h5>
+					 	<hr class="wordpress-2">
+					 	<h5>jQurey</h5>
+					 	<hr class="wordpress-3">
+					 	<h5>Woo Commerce</h5>
+					 	<hr class="wordpress">
+					 </div><!-- pro-lang -->
+					 <div class="social-media">
+					 	<ul>
+					 		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-commenting"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					 	</ul>
+					 </div><!-- social-media -->
+				</div><!-- img-block -->
+			</div><!--col-lg-3-->
+			<div class="col-lg-3">
+				<div class="img-block">
+					<img src="img/jhon-2.jpg" alt="">
+					<h3>Duis aute irure dolor in reprehenderit in
+					 voluptate velit esse cillum dolore fugiat.</h3>
+					 <div class="pro-lang">
+					 	<h5>Wordpress</h5>
+					 	<hr class="wordpress">
+					 	<h5>PHP</h5>
+					 	<hr class="wordpress-2">
+					 	<h5>jQurey</h5>
+					 	<hr class="wordpress-3">
+					 	<h5>Woo Commerce</h5>
+					 	<hr class="wordpress">
+					 </div><!-- pro-lang -->
+					 <div class="social-media">
+					 	<ul>
+					 		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-commenting"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					 	</ul>
+					 </div><!-- social-media -->
+				</div><!--col-lg-3-->
+			</div><!-- img-block -->
+			<div class="col-lg-3">
+				<div class="img-block">
+					<img src="img/jhon-3.jpg" alt="">
+					<h3>Duis aute irure dolor in reprehenderit in
+					 voluptate velit esse cillum dolore fugiat.</h3>
+					 <div class="pro-lang">
+					 	<h5>Wordpress</h5>
+					 	<hr class="wordpress">
+					 	<h5>PHP</h5>
+					 	<hr class="wordpress-2">
+					 	<h5>jQurey</h5>
+					 	<hr class="wordpress-3">
+					 	<h5>Woo Commerce</h5>
+					 	<hr class="wordpress">
+					 </div><!-- pro-lang -->
+					 <div class="social-media">
+					 	<ul>
+					 		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-commenting"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					 	</ul>
+					 </div><!-- social-media -->
+				</div><!-- img-block -->
+			</div><!--col-lg-3-->
+			<div class="col-lg-3">
+				<div class="img-block">
+					<img src="img/jhon-4.jpg" alt="">
+					<h3>Duis aute irure dolor in reprehenderit in
+					 voluptate velit esse cillum dolore fugiat.</h3>
+					 <div class="pro-lang">
+					 	<h5>Wordpress</h5>
+					 	<hr class="wordpress">
+					 	<h5>PHP</h5>
+					 	<hr class="wordpress-2">
+					 	<h5>jQurey</h5>
+					 	<hr class="wordpress-3">
+					 	<h5>Woo Commerce</h5>
+					 	<hr class="wordpress">
+					 </div><!-- pro-lang -->
+					 <div class="social-media">
+					 	<ul>
+					 		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-commenting"></i></a></li>
+					 		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					 	</ul>
+					 </div><!-- social-media -->			 
+				</div><!-- img-block -->
+			</div><!--col-lg-3-->
+		</div><!-- row -->
+	</div><!-- container  --> 
+	<div class="container-fluid np">
+		<div class="four-block">
+			<div class="container">	
+						<div class="row">
+							<div class="col-lg-3">	
+							<div class="four-block-1">
+								<i class="fa fa-thumbs-o-up"></i>
+								<h2>9591</h2>
+								<p>PROJECT DONE</p>
+							</div><!-- four-block-1  -->
+						</div><!-- col-lg-3 -->
+						<div class="col-lg-3">	
+							<div class="four-block-1">
+								<i class="fa fa-heart-o"></i>
+								<h2>564</h2>
+								<p>Project Done</p>
+							</div><!-- four-block-1  -->
+						</div><!-- col-lg-3 -->
+						<div class="col-lg-3">	
+							<div class="four-block-1">
+								<i class="fa fa-flask"></i>
+								<h2>187</h2>
+								<p>PRODUCT WE LOUCHED</p>
+							</div><!-- four-block-1  -->
+						</div><!-- col-lg-3 -->
+						<div class="col-lg-3">	
+							<div class="four-block-1">
+								<i class="fa fa-user"></i>
+								<h2>13</h2>
+								<p>TEAM MEMBERS</p>
+							</div><!-- four-block-1  -->
+						</div><!-- col-lg-3 -->
+						</div>
+					</div><!-- container  -->
+				</div><!-- four-block -->
+	</div><!-- container-fluid -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+					<div class="repeat-head">
+						<h1>OUR HAPPY CLIENTS</h1>
+						<p>Partners We Work With</p>
+					<div class="bdr"></div>
+				</div><!-- repeat-head  -->
+<!-- slider-start -->
+				 <div class="custom">
+				 	<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:100px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:100px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/clients.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/client03-spongebob-movie2.png" />
+            </div>
+            <div>
+                <img data-u="image" src="img/client06-g4tv.png" />
+            </div>
+            <div>
+                <img data-u="image" src="img/client01-cartoon-network.png" />
+            </div>
+            <div>
+                <img data-u="image" src="img/client04-apple-inc.png" />
+            </div>
+            <div>
+                <img data-u="image" src="img/client05-google-talk.png" />
+            </div>
+            <div>
+                <img data-u="image" src="img/client02-rough-draft-studios.png" />
+            </div>
+            <div>
+                <img data-u="image" src="img/client07-wonka-candy.png" />
+            </div>
+            <div>
+                <img data-u="image" src="img/021.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/022.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/024.jpg" />
+            </div>
+            <a data-u="any" href="https://www.jssor.com" style="display:none">image gallery</a>
+        </div>
+    </div>
+				 </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+
+			</div><!--col-lg-12-->
+		</div>
+	</div><!-- container -->
+	<footer>
+		<div class="container">
+			<div class="row">
+					<div class="col-lg-3">
+						<div class="foot-block">
+							<h3>OVERVIEW</h3>
+							<hr class="bdr-f">
+							<p>Try our Demo </p>
+							<hr class="bdr-b">
+							<p>Our Team</p>
+							<hr class="bdr-b">
+							<p>Journal</p>
+							<hr class="bdr-b">
+							<p>History</p>
+							<hr class="bdr-b">
+							<p>Support Forum</p>	
+						</div><!-- foot-block -->
+					</div><!-- col-lg-3-->
+					<div class="col-lg-3">
+						<div class="foot-block">
+							<h3>RESOURCES</h3>
+							<hr class="bdr-f">
+							<p>Success Stories</p>
+							<hr class="bdr-b">
+							<p>Integration</p>
+							<hr class="bdr-b">
+							<p>Partners</p>
+							<hr class="bdr-b">
+							<p>User Centered</p>
+							<hr class="bdr-b">
+							<p>Knowledge </p>
+						</div><!-- foot-block -->
+					</div><!-- col-lg-3-->
+					<div class="col-lg-3">
+						<div class="foot-block">
+							<h3>OTHERS</h3>
+							<hr class="bdr-f">
+							<p>System status</p>
+							<hr class="bdr-b">
+							<p>Security and Compliance</p>
+							<hr class="bdr-b">
+							<p>Term of Service</p>
+							<hr class="bdr-b">
+							<p>Privacy Policy</p>
+							<hr class="bdr-b">
+							<p>DMCA NOTICE</p>
+						</div><!-- foot-block -->
+					</div><!-- col-lg-3-->
+					<div class="col-lg-3">
+						<div class="foot-block">
+							<h3>INSTAGRAM</h3>
+							<hr class="bdr-f">
+							<div class="foot-img">
+								<img src="img/insta-1.jpg" alt="">
+							</div>
+							<div class="foot-img">
+								<img src="img/insta-2.jpg" alt="">
+							</div>
+							<div class="foot-img">
+								<img src="img/insta-3.jpg" alt="">
+							</div>
+							<div class="foot-img">
+								<img src="img/insta-4.jpg" alt="">
+							</div>
+							<div class="foot-img">
+								<img src="img/insta-5.jpg" alt="">
+							</div>
+							<div class="foot-img">
+								<img src="img/insta-6.jpg" alt="">
+							</div>
+						</div><!-- foot-block -->
+					</div><!-- col-lg-3-->
+			</div><!--  row -->
+		</div><!-- container -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="last-foot">
+						<p>&copy 2017 Margo.All right reserved.</p>
+						<div class="social-foot">
+							<ul>
+								<li><a href="#">Tos</a></li>
+								<li><a href="#">Contect</a></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Branding</a></li>
+								<li><a href="#">Journals</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+   </body>
+</html>
